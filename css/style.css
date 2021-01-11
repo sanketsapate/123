@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ethonocentric;
+  src: url(ethnocentric_rg.ttf);
+}
+
+ul{
+    position: fixed;
+	float: right;
+	list-style-type: none;
+	margin-top: 30px;
+    right: 20px;
+}
+
+ul li{
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	padding: 5px 20px;
+	color: #ffffff;
+	border: 1px transparent #ffffff;
+	transition: 0.4s ease;
+}
+
+ul li a:hover{
+	color: #ffffff;
+	background-color: #ffffff;
+}
+
+.logo img{
+	float: left;
+	width: 85px;
+	height: auto;
+	margin-top: 30px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+	font-size: 45px;
+	color: #ffffff;
+	letter-spacing: 2px;
+	font-family: Ethonocentric;
+	font-stretch: condensed;
+    text-align: center;
+    border: 1px transparent;
+}
+
+.logo .wave{
+	position: absolute;
+    bottom: 0;
+    width: 10;
+    left: 0;
+/*    height: 240px;*/
+}
+
+.con{
+    background: #8DE9D5;
+    position: relative;
+    font-size: 60px;
+    top: 100%;
+}
+
+body{
+    position: relative;
+    background-image: linear-gradient(-45deg, #90e0ef, #4ea8de, #6930c3);
+    height: 100vh;
+    bottom: 0;
+    animation: changes 5s ease-in-out ;
+    background-size: 300% 300%;
+}
+
+@keyframes changes{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+    background-position: 100% 50%;
+    }
+    100%{
+    background-position: 0 50%;
+    }
+}
